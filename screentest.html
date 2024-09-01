@@ -6,10 +6,10 @@
 <body>
 
 <script>
-  if (window.innerWidth < 640) {
-    alert('Less than 640: ' + window.innerWidth);
+  if (document.documentElement.clientWidth < 640) {
+    alert('clientWidth less than 640: ' + document.documentElement.clientWidth);
   } else {
-    alert('640 or more: ' + window.innerWidth);
+    alert('clientWidth 640 or more: ' + document.documentElement.clientWidth);
   }
 </script>
 
