@@ -75,7 +75,7 @@ h2 {
 <script>
 Splide.defaults = {
   autoplay: true,
-  gap: "1em",
+  gap: '1em',
   interval: 10000,
   lazyLoad: 'nearby',
   pagination: false,
@@ -83,8 +83,8 @@ Splide.defaults = {
   rewind: true,
   width: '55vw',
   breakpoints: {
-    800: {
-      width: '80vw',
+    640: {
+      width: '75vw',
     },
   }
 }
@@ -177,7 +177,11 @@ Splide.defaults = {
 <br><br>
 
 <script>
-  new Splide( '#image-carousel' ).mount();
+  if (window.matchMedia("(max-width: 640px)").matches) {
+    new Splide( '#image-carousel', { width: '75vw', } ).mount();
+  } else {
+    new Splide( '#image-carousel' ).mount();
+  }
 </script>
 
 </body>
