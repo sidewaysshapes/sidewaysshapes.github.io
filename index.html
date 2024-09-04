@@ -4,6 +4,8 @@
 <head>
 <title>Sideways Shapes</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@ body {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  font-size: clamp(0.75rem, 2vw, 3.5rem);
 }
 
 .livedate {
@@ -41,7 +43,7 @@ h2 {
 }
 
 .dates {
-  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  font-size: clamp(0.75rem, 2vw, 3.5rem);
 }
 
 .splide__slide img {
@@ -177,11 +179,7 @@ Splide.defaults = {
 <br><br>
 
 <script>
-  if (window.innerWidth < 640) {
-    new Splide( '#image-carousel', { width: '75vw', } ).mount();
-  } else {
-    new Splide( '#image-carousel' ).mount();
-  }
+  new Splide( '#image-carousel' ).mount();
 </script>
 
 </body>
