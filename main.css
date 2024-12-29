@@ -1,0 +1,131 @@
+ :root {
+  --text-colour: #f9f9f9;
+  --primary-colour: #2a5ba0;
+  --secondary-colour: #ff934f;
+  --tertiary-colour: #38aecc;
+  --background-colour: #1f0812;
+}
+
+a:link, a:visited {
+  background-color: transparent;
+  color: var(--tertiary-colour);
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: transparent;
+  color: var(--secondary-colour);
+  text-decoration: none;
+}
+
+body {
+  color: var(--text-colour);
+  background-color: var(--background-colour);
+  font-family: Comfortaa;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(1rem, 2.5vw, 4rem);
+}
+
+header {
+  background-color: var(--background-colour);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+p {
+  font-size: clamp(0.7rem, 1.5vw, 3rem);
+}
+
+video {
+  aspect-ratio: 16/9;
+  width: clamp(75vw, 75vw, 720px);
+}
+
+.header_text {
+  fill: var(--primary-colour);
+}
+
+.live_date {
+  color: var(--secondary-colour);
+}
+
+.live_location {
+  color: var(--tertiary-colour);
+}
+
+.section_heading {
+  display: block;
+  fill: var(--text-colour);
+  font-size: 23px;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.song_title {
+  font-style: italic;
+}
+
+#live_dates_note {
+  font-size: clamp(0.75rem, 2vw, 3.5rem);
+}
+
+#live_dates_section {
+  font-size: clamp(0.75rem, 2vw, 3.5rem);
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Splide image carousel customisations */
+.splide {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.splide__slide__content {
+  font-size: clamp(0.7rem, 1.5vw, 3rem);
+  padding: 1rem 0;
+}
+
+.splide__slide img {
+  height: auto;
+  width: 100%;
+}
+
+
+/* MailChimp sign-up form customisations */
+#mc_embed_signup {
+  margin-left: auto;
+  margin-right: auto;
+  width: clamp(50ch, 75vw, 80ch);
+}
+
+#mc_embed_signup .button {
+  background-color: var(--primary-colour);
+}
+
+#mc_embed_signup .button:hover {
+  background-color: var(--secondary-colour);
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  background-color: var(--background-colour);
+  color: var(--secondary-colour);
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+  border:2px solid var(--secondary-colour);
+}

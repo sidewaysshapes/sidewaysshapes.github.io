@@ -26,109 +26,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
-<style>
-
-:root {
-  --text-colour: #f9f9f9;
-  --primary-colour: #2a5ba0;
-  --secondary-colour: #ff934f;
-  --tertiary-colour: #38aecc;
-  --background-colour: #1f0812;
-}
-
-a:link, a:visited {
-  background-color: transparent;
-  color: var(--tertiary-colour);
-  text-decoration: none;
-}
-
-a:hover, a:active {
-  background-color: transparent;
-  color: var(--secondary-colour);
-  text-decoration: none;
-}
-
-body {
-  color: var(--text-colour);
-  background-color: var(--background-colour);
-  font-family: Comfortaa;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-}
-
-h1 {
-  font-size: clamp(1rem, 2.5vw, 4rem);
-}
-
-header {
-  background-color: var(--background-colour);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-p {
-  font-size: clamp(0.7rem, 1.5vw, 3rem);
-}
-
-.header_text {
-  fill: var(--primary-colour);
-}
-
-.live_date {
-  color: var(--secondary-colour);
-}
-
-.live_location {
-  color: var(--tertiary-colour);
-}
-
-.section_heading {
-  display: block;
-  fill: var(--text-colour);
-  font-size: 23px;
-  font-weight: normal;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.song_title {
-  font-style: italic;
-}
-
-.splide {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.splide__slide__content {
-  font-size: clamp(0.7rem, 1.5vw, 3rem);
-  padding: 1rem 0;
-}
-
-.splide__slide img {
-  height: auto;
-  width: 100%;
-}
-
-#live_dates_footer {
-  font-size: clamp(0.75rem, 2vw, 3.5rem);
-}
-
-#live_dates_section {
-  font-size: clamp(0.75rem, 2vw, 3.5rem);
-}
-
-#logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-</style>
+<link href="main.css" rel="stylesheet" type="text/css">
 
 <script>
 Splide.defaults = {
@@ -194,16 +92,18 @@ Splide.defaults = {
 </svg>
 
 <p id="live_dates_section">
-<span class="live_date">15th April 2024 </span>
-<span class="live_location"> Tortilla Cantina, Bridport</span><br>
-<span class="live_date">17th June </span>
-<span class="live_location"> Tortilla Cantina, Bridport</span><br>
-<span class="live_date">6th July 2024 </span>
-<span class="live_location"> Busking Festival, Lyme Regis</span><br>
+<p><div id="live_dates_note">
+  <a href="signup.html" title="Click to subscribe">Subscribe to the mailing list</a><br>to be notified of upcoming gigs
+</div></p>
 <span class="live_date">13th July 2024 </span>
 <span class="live_location"> Jurassic Fields, Bridport</span><br>
+<span class="live_date">6th July 2024 </span>
+<span class="live_location"> Busking Festival, Lyme Regis</span><br>
+<span class="live_date">17th June </span>
+<span class="live_location"> Tortilla Cantina, Bridport</span><br>
+<span class="live_date">15th April 2024 </span>
+<span class="live_location"> Tortilla Cantina, Bridport</span><br>
 </p>
-<div id="live_dates_footer">More dates to be confirmed</div>
 
 <br>
 
@@ -282,6 +182,8 @@ they have played festivals, local events and open mic nights.
 <footer>
 <p>
   <a href="live.html" title="Click to see videos from live performances">Videos</a>
+</p><p>
+  <a href="signup.html" title="Subscribe to our mailing list">Subscribe</a>
 </p><p>
   <a href="mailto:contact@sidewaysshapes.band?subject=Sideways%20Shapes%20band%20enquiry" title="Click to email us a message or enquiry">Contact Us</a>
 </p>
