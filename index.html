@@ -28,6 +28,9 @@
 
 <link href="main.css" rel="stylesheet" type="text/css">
 
+<!-- Preload the LCP image with a high fetchpriority so it starts loading immediately -->
+<link rel="preload" fetchpriority="high" as="image" href="https://assets.sidewaysshapes.band/full-band-2404.jpg" type="image/jpeg">
+
 <script>
 Splide.defaults = {
   autoplay: true,
