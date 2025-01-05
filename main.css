@@ -8,14 +8,14 @@
 
 a:link, a:visited {
   background-color: transparent;
-  color: var(--tertiary-colour);
+  color: var(--text-colour);
   text-decoration: none;
 }
 
 a:hover, a:active {
   background-color: transparent;
   color: var(--secondary-colour);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 body {
