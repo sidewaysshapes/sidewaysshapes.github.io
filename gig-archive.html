@@ -4,7 +4,7 @@
 <head>
 <title>Sideways Shapes</title>
 
-<meta name="description" content="Sideways Shapes official website - the band, their music, live dates, photos and more">
+<meta name="description" content="Sideways Shapes live dates archive">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 
@@ -23,32 +23,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://assets.sidewaysshapes.band/favicon-180.png">
 <link rel="mask-icon" sizes="any" href="https://assets.sidewaysshapes.band/mask-icon.svg" color="#2a5ba0">
 
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-
 <link href="main.css" rel="stylesheet" type="text/css">
-
-<!-- Preload the LCP image with a high fetchpriority so it starts loading immediately -->
-<link rel="preload" fetchpriority="high" as="image" href="https://assets.sidewaysshapes.band/full-band-2404.jpg" type="image/jpeg">
-
-<script>
-Splide.defaults = {
-  autoplay: true,
-  interval: 10000,
-  gap: '1em',
-  lazyLoad: 'nearby',
-  pagination: false,
-  rewind: true,
-  speed: 2000,
-  width: '55vw',
-
-  breakpoints: {
-    640: {
-      width: '75vw',
-    },
-  }
-}
-</script>
 
 </head>
 
@@ -56,6 +31,7 @@ Splide.defaults = {
 
 <header>
 
+<a href="index.html" title="Click to return to the home page">
 <svg
   id="logo"
   height="75%"
@@ -71,6 +47,7 @@ Splide.defaults = {
     transform="scale(0.26)"
   />
 </svg>
+</a>
 
 </header>
 
@@ -81,27 +58,28 @@ Splide.defaults = {
   class="section_heading"
   height="45%"
   width="45%"
-  viewBox="0 -10 250 37"
+  viewBox="0 -10 250 40"
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:svg="http://www.w3.org/2000/svg">
   <title>Live dates heading</title>
   <text
     transform="rotate(-7)"
-    x="58"
+    x="37"
     y="34">
-      Live Dates
+      Previous Dates
    </text>
 </svg>
 
 <p id="live_dates_section">
-<span class="live_date">5th February 2025 </span>
-<span class="live_location"> Battle Of The Bands, Bar 61 Taunton</span><br>
-<span class="live_date">18th April 2025 </span>
-<span class="live_location"> Axminster Guildhall</span><br>
-<span id="live_dates_note">
-  <a href="gig-archive.html" title="Click to see past dates">Click to see our past dates</a>
-</span>
+<span class="live_date">13th July 2024 </span>
+<span class="live_location"> Jurassic Fields, Bridport</span><br>
+<span class="live_date">6th July 2024 </span>
+<span class="live_location"> Busking Festival, Lyme Regis</span><br>
+<span class="live_date">17th June </span>
+<span class="live_location"> Tortilla Cantina, Bridport</span><br>
+<span class="live_date">15th April 2024 </span>
+<span class="live_location"> Tortilla Cantina, Bridport</span><br>
 </p>
 
 <div id="subscribe_text">
@@ -109,74 +87,6 @@ Splide.defaults = {
 </div>
 
 <br>
-
-<svg
-  id="about_us_heading"
-  class="section_heading"
-  height="45%"
-  width="45%"
-  viewBox="0 -10 250 37"
-  version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:svg="http://www.w3.org/2000/svg">
-  <title>Live dates heading</title>
-  <text
-    transform="rotate(-7)"
-    x="67"
-    y="34">
-      About Us
-   </text>
-</svg>
-<p>
-Sideways Shapes are a band from West Dorset<br>
-playing punk-grunge tinged rock tuned for the 21st century.<br>
-The majority of their songs are originals, but<br>
-look out for occasional classic cover versions in their live set.<br>
-Gigging since 2020, when they were just 9 years old,<br>
-they have played festivals, local events and open mic nights.
-</p>
-
-<br>
-
-<section id="image-carousel" class="splide" aria-label="Band Pics">
-  <div class="splide__track">
-  <ul class="splide__list">
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/full-band-2404.jpg" alt="Photo of the full band crammed by the doorway of a cafe/restaurant">
-      <div class="splide__slide__content">
-        The band squeezed in for an open mic night in Bridport
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/vocalist-2407.jpg" alt="The lead singer and keyboard player, illuminated by green stage lights at the microphone">
-      <div class="splide__slide__content">
-        Charlie singing <span class="song_title">The Trees</span> at Jurassic Fields festival
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/drummer-2407.jpg" alt="The band's drummer in an impressive sunbeam/starlight lighting effect">
-      <div class="splide__slide__content">
-        Ludo's drum rhythms keeps every song tight
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/guitarist-2407.jpg" alt="The guitarist, on a smoke-filled stage, concentrating on his playing">
-      <div class="splide__slide__content">
-        Oscar's blistering guitar solo at Jurassic Fields
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/keyboard-2407.jpg" alt="The keyboard player at microphone with glimpses of his bandmates behind him">
-      <div class="splide__slide__content">
-        Ivan, the coolest keyboard player in the South West
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/jurassic-fields-stage-lineup.jpg" alt="Big Top Saturday Line Up poster with Sideways Shapes 2nd on the bill">
-    </li>
-  </ul>
-  </div>
-</section>
 
 </main>
 
