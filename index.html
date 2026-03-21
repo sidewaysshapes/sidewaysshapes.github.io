@@ -24,32 +24,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://assets.sidewaysshapes.band/favicon-180.png">
 <link rel="mask-icon" sizes="any" href="https://assets.sidewaysshapes.band/mask-icon.svg" color="#2a5ba0">
 
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-
 <link href="main.css" rel="stylesheet" type="text/css">
 
 <!-- Preload the LCP image with a high fetchpriority so it starts loading immediately -->
 <link rel="preload" fetchpriority="high" as="image" href="https://assets.sidewaysshapes.band/full-band-2404.jpg" type="image/jpeg">
-
-<script>
-Splide.defaults = {
-  autoplay: true,
-  interval: 10000,
-  gap: '1em',
-  lazyLoad: 'nearby',
-  pagination: false,
-  rewind: true,
-  speed: 2000,
-  width: '55vw',
-
-  breakpoints: {
-    640: {
-      width: '75vw',
-    },
-  }
-}
-</script>
 
 </head>
 
@@ -140,45 +118,7 @@ they have played festivals, local events and open mic nights.
 
 <br>
 
-<section id="image-carousel" class="splide" aria-label="Band Pics">
-  <div class="splide__track">
-  <ul class="splide__list">
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/full-band-2404.jpg" alt="Photo of the full band crammed by the doorway of a cafe/restaurant">
-      <div class="splide__slide__content">
-        The band squeezed in for an open mic night in Bridport
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/vocalist-2407.jpg" alt="The lead singer and keyboard player, illuminated by green stage lights at the microphone">
-      <div class="splide__slide__content">
-        Charlie singing <span class="song_title">The Trees</span> at Jurassic Fields festival
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/drummer-2407.jpg" alt="The band's drummer in an impressive sunbeam/starlight lighting effect">
-      <div class="splide__slide__content">
-        Ludo's drum rhythms keeps every song tight
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/guitarist-2407.jpg" alt="The guitarist, on a smoke-filled stage, concentrating on his playing">
-      <div class="splide__slide__content">
-        Oscar's blistering guitar solo at Jurassic Fields
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/keyboard-2407.jpg" alt="The keyboard player at microphone with glimpses of his bandmates behind him">
-      <div class="splide__slide__content">
-        Ivan, the coolest keyboard player in the South West
-      </div>
-    </li>
-    <li class="splide__slide">
-      <img data-splide-lazy="https://assets.sidewaysshapes.band/jurassic-fields-stage-lineup.jpg" alt="Big Top Saturday Line Up poster with Sideways Shapes 2nd on the bill">
-    </li>
-  </ul>
-  </div>
-</section>
+<img id="main_image" src="https://assets.sidewaysshapes.band/bandshot-2603.jpg">
 
 </main>
 
@@ -219,10 +159,6 @@ they have played festivals, local events and open mic nights.
   </div>
 </div>
 </footer>
-
-<script>
-  new Splide( '#image-carousel' ).mount();
-</script>
 
 </body>
 </html>

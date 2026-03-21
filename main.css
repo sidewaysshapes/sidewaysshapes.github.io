@@ -131,10 +131,6 @@ video {
   font-size: clamp(0.7rem, 1.5vw, 3rem);
 }
 
-#subscribe_text {
-  font-size: clamp(0.75rem, 2vw, 3.5rem);
-}
-
 #live_dates_section {
   font-size: clamp(0.75rem, 2vw, 3.5rem);
 }
@@ -145,20 +141,15 @@ video {
   margin-right: auto;
 }
 
-/* Splide image carousel customisations */
-.splide {
-  margin-left: auto;
-  margin-right: auto;
+#main_image {
+  border: 3px groove var(--primary-colour);
+  border-radius: 7px;
+  padding: 3px;
+  width: 65%
 }
 
-.splide__slide__content {
-  font-size: clamp(0.7rem, 1.5vw, 3rem);
-  padding: 1rem 0;
-}
-
-.splide__slide img {
-  height: auto;
-  width: 100%;
+#subscribe_text {
+  font-size: clamp(0.75rem, 2vw, 3.5rem);
 }
 
 
